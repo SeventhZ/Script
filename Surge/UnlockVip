@@ -9,5 +9,7 @@ Grammarly解锁订阅 = type=http-response,pattern=^https?:\/\/subscription\.gra
 
 SparkMail解锁永久订阅 = type=http-response,requires-body=1,max-size=0,pattern=^https?:\/\/api\.revenuecat\.com\/v1\/(receipts|subscribers\/.{36}|subscribers\/\w{14})$,script-path=https://raw.githubusercontent.com/yqc007/QuantumultX/master/SparkMailProCrack.js
 
+格式转换 = type=http-request,requires-body=1,max-size=0,pattern=_surge$,script-path=https://raw.githubusercontent.com/githubdulong/Script/master/Surge_Qx.js
+
 [MITM]
-hostname= %APPEND% subscription.grammarly.com, api.revenuecat.com
+hostname= %APPEND% subscription.grammarly.com, api.revenuecat.com, github.com:443, raw.githubusercontent.com:443
